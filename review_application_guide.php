@@ -115,7 +115,7 @@ session_start();
                       <style>
 
                       body {
-                              background-color: springgreen;
+                              background-color: Aqua;
                           }
 
                       .text{
@@ -308,13 +308,12 @@ session_start();
                                                   <td>
 
                                                           <br>
-                                                          <input id="button" type="button" value="Approve" onclick="see_all_application(<?php echo $row['guide_id']?>);"
+                                                          <!-- <input id="button" type="button" value="Approve" onclick="Approve_application_guide(<?php echo $row['guide_id']?>);" -->
+                                                          <input id="button" type="button" value="Approve" onclick="Approve_application_guide();">
                                                           <br><br>
                                                           <br>
                                                           <input type="button" id="button" value="Reject" onclick="Reject(<?php echo $row['guide_id']?>);">
                                                           <br><br>
-
-
                                                   </td>
                                               </tr>
 
@@ -351,6 +350,21 @@ session_start();
                           }
 
 
+                          //function Approve_application_guide(guide_id){
+
+                        //          location.assign('Approve_application_guide.php?guide_id='+guide_id);
+
+                      //    }
+                          function Approve_application_guide(){
+
+                                  location.assign('index.html');
+
+                          }
+
+
+
+
+
 
                           function allproduct(){
                               location.assign('allproduct.php');
@@ -371,11 +385,7 @@ session_start();
                           }
 
 
-                          function see_all_reviews(pid){
 
-                                  location.assign('watch.php?prodid='+pid);
-
-                          }
 
                           function orderhistory(){
                               location.assign('allorders.php');
@@ -413,7 +423,7 @@ session_start();
 
 
 
-<!-- Eikhane change korbiiii -->
+<!--  change  -->
 
 
        <footer class="section footer-corporate context-dark">

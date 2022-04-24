@@ -1,3 +1,4 @@
+session_start();
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
@@ -102,7 +103,6 @@
 
       <?php
 
-      session_start();
 
     //  if(
     //      isset($_SESSION['username'])
